@@ -1,0 +1,162 @@
+.container{
+  display: flex;
+}
+
+.container .sidebar{
+  width: 400px;
+  height: 100vh;
+  background: #1E213A;
+  border: 1px solid #68DDFE;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .weather-search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar .weather-search input{
+  width: 70%;
+  padding: 10px 15px;
+  border: none;
+  border: 1px solid #2B2D2F;
+  background-color: #13131B;
+  color: white;
+  font-family: sans-serif;
+  font-size: 19px;
+  outline: none;
+}
+
+.sidebar .weather-search button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #68DDFE;
+  color: #100E1D;
+  font-family: sans-serif;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.sidebar .weather-img{
+  margin-top: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+.sidebar .weather-img img{
+  width: 100px;
+  object-fit: cover;
+}
+
+.sidebar .weatherTemp{
+  margin: 50px 0 20px 0;
+  color: white;
+  font-size: 20px;
+}
+
+.sidebar .weatherTemp span{
+  font-size: 100px;
+}
+
+.sidebar .weatherCity{
+  color: white;
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.sidebar .weatherDays{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 20px;
+  margin: 50px 0 30px 0;
+}
+
+.sidebar .weatherLocation{
+  color: aquamarine;
+  margin-top: 50px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 400px);
+}
+
+.next-days{
+  display: flex;
+  justify-content: space-between;
+  margin: 70px auto 0 auto;
+  width: 1000px;
+  gap: 20px;
+}
+
+.next-days .day{
+  width: 200px;
+  height: 200px;
+  background-color: #1E213A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  justify-content: center;
+}
+
+.next-days .day .differentWay{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.next-days .day .differentWay .temp{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.highlight{
+  margin: 70px auto 0 auto;
+  width: 1000px;
+}
+
+.highlight h2{
+  color: white;
+  font-size: 30px;
+}
+
+.highlight .highlight-cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.highlight .highlight-cards .highlight-card{
+  background-color: #1E213A;
+  width: 300px;
+  height:fit-content;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+.highlight .highlight-cards .highlight-card h3{
+  font-size: 20px;
+  color: rgb(181, 181, 181);
+  margin-bottom: 20px;
+}
+
+.highlight .highlight-cards .highlight-card span{
+  font-size: 80px;
+  font-weight: initial;
+}
+
